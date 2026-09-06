@@ -46,7 +46,7 @@ function game() {
     }
     let computerSelection = computerPlay();
     let computerChoice = choices[computerSelection];
-    let roundResult = playRound(playerSelection, computerSelection);
+    let roundResult = playRound(playerSelection, computerChoice);
     switch (roundResult) {
         case "playerWin":
             playerScore++;
@@ -71,6 +71,3 @@ function game() {
     }
     return true;
 }
-
-
-
