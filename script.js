@@ -26,7 +26,7 @@ function playerPlay() {
         if (playerInput === null) {
             return null;
         }
-        playerInput = playerInput.toLowerCase();
+        playerInput = playerInput.toLowerCase().replace(/\s/g, "");
         if (!choices.includes(playerInput)) {
             alert("Invalid input. Please choose rock, paper, or scissors.");
         }
