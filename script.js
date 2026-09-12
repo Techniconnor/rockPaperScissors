@@ -1,5 +1,5 @@
-var playerScore = 0;
-var computerScore = 0;
+let playerScore = 0;
+let computerScore = 0;
 const choices = ["rock", "paper", "scissors"];
 const winningMoves = {
 	rock: "scissors",
